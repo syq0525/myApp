@@ -1,0 +1,51 @@
+// 弹性布局
+@mixin flexBox($value: wrap) {
+  display: flex;
+  flex-wrap: $value; // flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;
+}
+
+@mixin flex($value: 1) {
+  flex: $value;
+}
+
+@mixin flexDir($value: row) {
+  flex-direction: $value;
+}
+
+@mixin flexJustify($value: center) {
+  justify-content: $value;
+}
+
+@mixin flexAlign($value: center) {
+  align-items: $value;
+}
+
+@mixin flexSelf($value: center) {
+  align-self: $value;
+}
+
+// 字数过多隐藏显示省略号
+@mixin txtOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin txtlineOverflow($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+
+}
+
+// padding 默认20rpx
+@mixin pdLeftRight($num:20) {
+  padding: 0 $num+rpx
+}
+
+// margin 默认20rpx
+@mixin mgLeftRight($num:20) {
+  margin: 0 $num+rpx
+}
