@@ -3,7 +3,7 @@
  * @Author: ShiYangquan
  * @Date: 2019-12-25 15:11:45
  * @LastEditors  : ShiYangquan
- * @LastEditTime : 2020-01-20 14:54:29
+ * @LastEditTime : 2020-01-20 14:59:12
  -->
 <template>
   <app-layout @update:scrolltop="val => scrollTop = val">
@@ -794,7 +794,8 @@ export default {
         transition: all 0.3s;
         width: 80%;
         position: absolute;
-        top: 10%;
+        top: 50%;
+        transform: translateY(-50%);
         left: 10%;
       }
     }
