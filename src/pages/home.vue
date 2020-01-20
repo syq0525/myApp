@@ -3,7 +3,7 @@
  * @Author: ShiYangquan
  * @Date: 2019-12-25 15:11:45
  * @LastEditors  : ShiYangquan
- * @LastEditTime : 2020-01-17 09:19:43
+ * @LastEditTime : 2020-01-20 14:54:29
  -->
 <template>
   <app-layout @update:scrolltop="val => scrollTop = val">
@@ -139,6 +139,7 @@
                       <a href='https://www.lechengclub.com/wxwap?#/home' target='_blank' title="盈众乐橙汇">盈众乐橙汇</a>
                     </h5>
                     <small>技术：vue</small>
+                    <small>项目描述：项目主要是服务于盈众用户的一款微信web，用户可以添加车辆到应用上进行违章查询，维保预约，美容洗车，领券中心，套餐购买、商城等服务</small>
                     <div class="clearfix"></div>
                   </div>
                   <img src="@/assets/img/proj1.jpg" class="img-responsive">
@@ -153,6 +154,7 @@
                       <a title="盈众合伙人" @click="showPartner=true">盈众合伙人</a>
                     </h5>
                     <small>技术：uni-app</small>
+                    <small>项目描述：项目主要拓展老友渠道，降低新用户进入门槛。应用有提交线索、分享提交、查看数据基础上，增加内部员工发展合伙人与合伙人分享海报功能的一款微信小程序</small>
                     <div class="clearfix"></div>
                     <img src="@/assets/img/partner.jpg" v-show="showPartner"  @click="showPartner=false">
                   </div>
@@ -168,6 +170,7 @@
                       <a title="盈众员工端" @click="showStaff=true">盈众员工端</a>
                     </h5>
                     <small>技术：uni-app</small>
+                    <small>项目描述：项目主要服务于整个盈众员工一款微信小程序、App多端应用。员工可进行对用户预约处理，套餐查询、券码核销、分享个人名片等功能</small>
                     <div class="clearfix"></div>
                     <img src="@/assets/img/staff.jpg" v-show="showStaff" @click="showStaff=false">
                   </div>
@@ -183,7 +186,8 @@
                     <h5>
                       <a href='https://www.vqida.com' target='_blank' title="微企达">微企达</a>
                     </h5>
-                    <small>技术：小程序+vue+jquery</small>
+                    <small>技术：小程序+vue+jq</small>
+                    <small>项目描述：项目主要是自助DIY制作微信小程序，用户通过拖拽组件（文本，轮播，动态文章，动态列表，动态表单，商品列表等等）生成所需的小程序页面</small>
                     <div class="clearfix"></div>
                   </div>
                   <img src="@/assets/img/proj4.jpg" class="img-responsive">
@@ -197,7 +201,8 @@
                     <h5>
                       <a href='https://www.vqida.com' target='_blank' title="易速推">易速推</a>
                     </h5>
-                    <small>技术：jquery</small>
+                    <small>技术：js+jq+cocos2d</small>
+                    <small>项目描述：项目主要是自助DIY营销游戏，用户通过选择需要的小游戏模板和营销模式（口令红包、分享助力、抽奖、排行榜、优惠券等营销模式）制作一款微信营销游戏</small>
                     <div class="clearfix"></div>
                   </div>
                   <img src="@/assets/img/proj5.jpg" class="img-responsive">
@@ -212,6 +217,7 @@
                       <a title="盈众CRM后台">盈众CRM后台</a>
                     </h5>
                     <small>技术：react+antd</small>
+                    <small>项目描述：项目主要是内部员工的盈众后台管理系统</small>
                     <div class="clearfix"></div>
                   </div>
                   <img src="@/assets/img/proj6.jpg" class="img-responsive">
@@ -248,6 +254,12 @@
                 <h5>vue/uni-app/小程序</h5>
                 <div class="progress">
                   <div class="progress-bar bg-info" style="width:80%"></div>
+                </div>
+              </div>
+              <div class="padding-left">
+                <h5>sass/less</h5>
+                <div class="progress">
+                  <div class="progress-bar bg-info" style="width:70%"></div>
                 </div>
               </div>
               <div class="padding-left">
@@ -772,7 +784,11 @@ export default {
       transition: all 0.5s;
       >h5 {
         transition: all 0.3s;
-        
+      }
+      small{
+        display: block;
+        margin-bottom: .8rem;
+        padding: 0 .5rem;
       }
       img{
         transition: all 0.3s;
@@ -854,7 +870,7 @@ export default {
 
 /* Testimonials Section */
 #testimonials {
-	background: url(../assets/img/testimonial-bg.jpg);
+	background: url(../assets/img/testimonial-bg.jpg) center center;
 	background-size: cover;
 	// background-attachment: fixed;
 	color: #ddd;

@@ -3,7 +3,7 @@
  * @Author: ShiYangquan
  * @Date: 2019-12-25 14:57:19
  * @LastEditors  : ShiYangquan
- * @LastEditTime : 2020-01-16 14:16:23
+ * @LastEditTime : 2020-01-20 14:21:00
  -->
 <template>
   <div class="app-container" :style="{'background':bgcolor}">
@@ -66,6 +66,7 @@ export default {
   .main {
     @include flex;
     width: 100%;
+
     position: relative;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
